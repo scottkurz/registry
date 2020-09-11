@@ -7,9 +7,7 @@ starterProjects:
   - name: user-app
     git:
       remotes:
-        origin: 'https://github.com/scottkurz/application-stack.git'
-      checkoutFrom: # mandatory if there is more than one remote
-        revision: starter-repo
+        origin: 'https://github.com/scottkurz/application-stack-starters.git'
 components:
   - name: devruntime
     container:
