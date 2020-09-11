@@ -7,8 +7,9 @@ starterProjects:
   - name: user-app
     git:
       remotes:
-        origin: 'https://github.com/OpenLiberty/application-stack.git'
-      sparseCheckoutDir: /templates/default
+        origin: 'https://github.com/scottkurz/application-stack.git'
+      checkoutFrom: # mandatory if there is more than one remote
+        revision: starter-repo
 components:
   - name: devruntime
     container:
