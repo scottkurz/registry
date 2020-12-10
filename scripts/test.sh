@@ -119,7 +119,7 @@ test() {
     #check if debug is working
     cat $DEVFILES_DIR"$devfileName/devfile.yaml" | grep "kind: debug"
     if [ $? -eq 0 ];  then
-        odo push --debug
+        odo push -v 9 --debug
         (odo debug port-forward)& CPID=$!
         waitForDebugCheck $devfileName
         if [ $? -ne 0 ]; then
