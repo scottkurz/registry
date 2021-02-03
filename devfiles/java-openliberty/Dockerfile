@@ -49,6 +49,7 @@ ARG ADD_MP_HEALTH=true
 RUN if [ "$ADD_MP_HEALTH" = "true" ]; then \
         /opt/ol/wlp/bin/server start; \
         /opt/ol/wlp/bin/server stop; \
+        ls -l /logs/*; \
         if ! grep "CWWKF0012I" /logs/messages.log | grep -q 'mpHealth-[0-9]*.[0-9]*\|microProfile-[0-9]*.[0-9]*'; then \
             echo "Missing mpHealth feature - adding config snippet"; \
             cp /tmp/stack/config/configDropins/defaults/liberty-stack-mpHealth.xml /config/configDropins/overrides; \
