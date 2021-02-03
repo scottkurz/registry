@@ -3,8 +3,8 @@ metadata:
   name: java-openliberty
   version: 0.4.1
   description: Java application stack using Open Liberty runtime
-  alpha.build-dockerfile: "https://github.com/OpenLiberty/application-stack/releases/download/outer-loop-0.5.0/Dockerfile"
-  alpha.deployment-manifest: "https://github.com/OpenLiberty/application-stack/releases/download/outer-loop-0.5.0/app-deploy.yaml"
+  alpha.build-dockerfile: "https://raw.githubusercontent.com/scottkurz/registry/full-image-shadow/devfiles/java-openliberty/Dockerfile"
+  alpha.deployment-manifest: "https://raw.githubusercontent.com/scottkurz/registry/full-image-shadow/devfiles/java-openliberty/app-deploy.yaml"
 starterProjects:
   - name: user-app
     git:
